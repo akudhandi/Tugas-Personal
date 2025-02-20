@@ -1,34 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <title>Profil Saya</title>
+    <title>Profil Saya - Modern Minimalist</title>
+    <!-- Contoh penggunaan font dari Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Ganti 'Poppins' sesuai selera -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* RESET & GLOBAL STYLES */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+        line-height: 1.6;
+      }
+      a {
+        color: #333;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #007bff;
+      }
+
+      /* HEADER */
+      header {
+        background-color: #ffffff;
+        border-bottom: 1px solid #ddd;
+        text-align: center;
+        padding: 20px;
+      }
+      header h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 10px;
+      }
+      nav li {
+        display: inline;
+      }
+      nav a {
+        font-weight: 500;
+      }
+
+      /* SECTION */
+      section {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 0 20px;
+      }
+      section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        font-weight: 700;
+      }
+      section p {
+        margin-bottom: 20px;
+        font-weight: 300;
+      }
+      section img {
+        max-width: 250px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      /* ASIDE */
+      aside {
+        max-width: 800px;
+        margin: 20px auto;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        border-radius: 8px;
+        padding: 20px;
+      }
+      aside h3 {
+        margin-bottom: 10px;
+        font-weight: 700;
+      }
+      aside ul {
+        list-style: disc;
+        margin-left: 20px;
+        font-weight: 300;
+      }
+
+      /* FOOTER */
+      footer {
+        max-width: 800px;
+        margin: 40px auto;
+        text-align: center;
+        padding: 20px;
+        color: #666;
+      }
+      footer p {
+        margin-bottom: 10px;
+        font-weight: 300;
+      }
+      footer a img {
+        vertical-align: middle;
+        margin-right: 5px;
+      }
+    </style>
   </head>
   <body>
+    <!-- HEADER -->
     <header>
       <h1>Fajar Ramadhandi Hidayat</h1>
       <nav>
         <ul>
-          <li><a href="#AboutMe">Tentang Saya</a></li>
-          <li><a href="#Contact">Kontak</a></li>
+          <li><a href="#tentang">Tentang Saya</a></li>
+          <li><a href="#kontak">Kontak</a></li>
         </ul>
       </nav>
     </header>
 
+    <!-- SECTION: PROFILE SINGKAT -->
     <section id="tentang">
       <h2>Profile Singkat</h2>
       <p>
-        Saya adalah seorang Mahasiswa yang sedang belajar akan perangkat lunak. Dalam
+        Saya adalah seorang Mahasiswa yang sedang belajar perangkat lunak. Dalam
         keseharian, saya belajar mata kuliah terkait pemrograman dan sistem
-        informasi. Di luar itu, saya aktif mengikuti organisasi dan mengembangkan
-        softskill saya di berbagai hal.
+        informasi. Di luar itu, saya aktif mengikuti organisasi dan
+        mengembangkan softskill di berbagai hal.
       </p>
       <div style="text-align: center">
-        <img src="foto gue.jpg" alt="Foto Gue" style="max-width: 250px" />
+        <img src="foto gue.jpg" alt="Foto Gue" />
       </div>
     </section>
 
-    <aside style="border: 2px solid #000; padding: 5px; margin: 10px;">
+    <!-- ASIDE: AKTIVITAS TERBARU -->
+    <aside>
       <h3>Aktivitas Terbaru</h3>
       <ul>
         <li>Tertarik Pada Hal-Hal yang Baru</li>
@@ -36,24 +153,23 @@
         <li>Sedang Berusaha Menjadi diri yang lebih Baik</li>
       </ul>
     </aside>
+
+    <!-- FOOTER -->
     <footer id="kontak">
-        <p>
-          Hubungi saya melalui surel: <br />
-          <a href="mailto:dhandifajar@gmail.com">
-            <img src="gmailicon.png" alt="gmail" width="20" height="20"> dhandifajar@gmail.com
-          </a>
-        </p>
-        <p>
-          <!-- Konten lainnya -->
-        </p>
-      </footer>
-      
+      <p>Hubungi saya melalui surel:</p>
+      <p>
+        <a href="mailto:dhandifajar@gmail.com">
+          <img src="gmailicon.png" alt="gmail" width="20" height="20" />
+          dhandifajar@gmail.com
+        </a>
+      </p>
+      <p>
         <a href="https://www.instagram.com/dhn_di/">
           <img src="instagram.png" alt="Ikon IG" width="20" height="20" />
           @dhn_di
         </a>
       </p>
-      <p>Hak Cipta (c) 2025 Fajar Ramadhandi Hidayat</p>
+      <p>Hak Cipta &copy; 2025 Fajar Ramadhandi Hidayat</p>
     </footer>
   </body>
 </html>
